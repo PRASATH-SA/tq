@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thrive Quotient – Streaks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script src="script.js"></script>
+
+<body>
+  <main class="streaks-page">
+
+    <!-- Element Seal -->
+    <section class="seal-section">
+      <img src="assets/air.png" alt="Element Seal" class="seal-icon" />
+
+      <div class="seal-name">AIR</div>
+      <div class="seal-sub">Seal received</div>
+    </section>
+
+    <!-- Week Circles -->
+    <section class="week-section">
+      <div class="week-labels">
+        <span>Su</span>
+        <span>Mo</span>
+        <span>Tu</span>
+        <span>We</span>
+        <span>Th</span>
+        <span>Fr</span>
+        <span>Sa</span>
+      </div>
+       <!-- Progress wrapper -->
+  <div class="week-progress">
+
+    <!-- base grey bar -->
+    <div class="week-track"></div>
+
+    <!-- gradient bar -->
+    <div class="week-fill" id="weekFill"></div>
+
+      <!-- Circles + ticks -->
+    <div class="week-circles">
+  <div class="day-slot done"><span class="tick">✓</span></div>
+  <div class="day-slot done"><span class="tick">✓</span></div>
+  <div class="day-slot done"><span class="tick">✓</span></div>
+  <div class="day-slot done"><span class="tick">✓</span></div>
+  <div class="day-slot "><span class="tick">✓</span></div>
+  <div class="day-slot"><span class="tick">✓</span></div>
+  <div class="day-slot"><span class="tick">✓</span></div>
+</div>
+
+    </section>
+
+    <!-- Motivation Text -->
+    <p class="motivation-text">
+      Obtain all seals to find your Ikigai
+    </p>
+
+    <!-- CTA -->
+    <button class="cta-btn" onclick="window.location.href='daily.html'">CONTINUE</button>
+
+  </main>
+</body>
+</html>

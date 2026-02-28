@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Thrive Quotient — Daily Reflection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-daily">
+    <main class="container">
+        <header class="header">
+            <h1 class="heading">Daily Reflection</h1>
+            <p class="subtitle">Take a moment to reflect on your day.</p>
+        </header>
+
+        <div class="prompt" id="prompt">
+            <!-- Prompt will be rendered here -->
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-secondary" onclick="window.location.href='dashboard.html'">Back</button>
+            <button class="btn btn-primary" id="saveBtn" onclick="saveResponse()">Save & Continue</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

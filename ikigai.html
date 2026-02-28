@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Thrive Quotient — Your Ikigai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-ikigai">
+    <main class="container">
+        <header class="header">
+            <h1 class="heading">Your Ikigai</h1>
+            <p class="subtitle">The intersection of what you love, what you’re good at, what the world needs, and what you can be paid for.</p>
+        </header>
+
+       <div class="ikigai-stats">
+
+  <svg viewBox="0 0 200 200" class="stats-chart">
+
+    <!-- Grid -->
+    <polygon points="100,20 180,75 150,165 50,165 20,75" class="stats-bg"/>
+    <polygon
+    id="ikigaiFill"
+    points="100,100 100,100 100,100 100,100 100,100"
+    class="stats-fill animated"
+    fill="url(#ikigaiGradient)"/>
+
+
+    <!-- Center -->
+    <circle cx="100" cy="100" r="4" class="stats-center"/>
+
+    <defs>
+  <linearGradient id="ikigaiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#3b82f6"/>
+    <stop offset="50%" stop-color="#f472b6"/>
+    <stop offset="100%" stop-color="#8b5cf6"/>
+  </linearGradient>
+</defs>
+
+  </svg>
+
+  <!-- Labels + floating hints -->
+
+<div class="stats-label top" data-dim="LOVE" data-tip="What you genuinely enjoy doing">Love</div>
+<div class="stats-label top-right" data-dim="SKILL" data-tip="Your abilities and strengths">Skill</div>
+<div class="stats-label bottom-right" data-dim="VALUE" data-tip="What creates real-world value">Value</div>
+<div class="stats-label bottom-left" data-dim="GROWTH" data-tip="How you evolve over time">Growth</div>
+<div class="stats-label top-left" data-dim="IMPACT" data-tip="Your effect on others">Impact</div>
+
+
+
+</div>
+        <div class="reveal">
+            <div class="reveal-title">Your Unique Path</div>
+            <div class="reveal-text" id="ikigaiText">
+                Based on your reflections, your Ikigai lies at the intersection of your passions and skills. Continue exploring to fully uncover it.
+            </div>
+        </div>
+
+        <button class="continue-btn" onclick="window.location.href='path.html'">See Your Roadmap</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
